@@ -3,7 +3,7 @@ import { CommandHandler, ICommandHandler } from '@nestjs/cqrs';
 import { VerifyEmailCommand } from './verify-email.command';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository, DataSource } from 'typeorm';
-import { UserEntity } from '../entity/user.entity';
+import { UserEntity } from '../../infra/db/entity/user.entity';
 import { AuthService } from 'src/auth/auth.service';
 
 @Injectable()

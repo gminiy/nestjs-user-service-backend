@@ -10,7 +10,7 @@ import emailConfig from './config/emailConfig';
 import { validationSchema } from './config/validationSchema';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { LoggingMiddleware } from './logging/logging.middleware';
-import { UsersController } from './users/users.controller';
+import { UsersController } from './users/interface/users.controller';
 import { AuthModule } from './auth/auth.module';
 import authConfig from './config/authConfig';
 import { WinstonModule, utilities } from 'nest-winston';
